@@ -1,0 +1,178 @@
+Notas de Aula - 29/03/2021
+Revisão para Avaliação do 1º Bimestre
+
+1. Definição Formal de Algoritmos
+	A) Sequencia ordenada de comandos
+	B) Um forma ordenada de atividades que não permite ambiguidade
+	C) Com um número finito de passos
+	
+	Que um algoritmo define de maneira estruturada a sequencia,
+	a ordem e o numero passos à serem realizados.
+	
+	Caracteristicas:
+	- Ter um início; 
+	- Ter um fim; 
+	- Não dar margem à dupla interpretação (não ter duplo sentido); 
+	- Ter a capacidade de receber dado(s) de entrada do mundo exterior; 
+	- Poder gerar informações de saída para o mundo externo ao do ambiente do algoritmo; 
+	
+	Representação:
+	- Linguagem Natural: comunicação humana
+	- Linguagem de Programação: transcrição em um software
+
+1.A - Formalismo de Linguagem: é o estudo de formatos de descrição
+de algoritmos de tal modo que seja expresso computacionalmente.
+	
+2. Alfabetos e o formalismo para a Análise Lêxica (Vocabulário)
+	A) Base:
+	  Principio de Alan Turing, em que classificamos os elementos em dois
+      níveis: 
+			- categorias gramaticais e vocabulário
+			- palavras não-terminais e terminais
+	
+	B) Definição do vocabulário ou alfabeto
+	Um alfabeto é um conjunto finito de símbolos, que formam o vocabulário
+	aceito por uma linguagem de programação. Por exemplos, em C os 
+	comandos if, break e continue ou os simbolos terminais de ; && { }
+	
+	Exemplo, o alfabeto para numeração romana: {I,V,X, L,C, M} 
+	Exemplo, o alfabeto que descreve as vogais: {a, e, i, o, u}
+	Exemplo, o alfabeto que descreve os numeros válidos: {0,1,2,...,9}
+	
+	Ao conjunto de todos as seqüências de elementos do alfabeto que 
+	se podem formar denota-se por A*.
+
+	Uma linguagem L sobre um alfabeto A, também escrita LA é todo 
+	subconjunto de A*.
+	
+	Não terminais: {if, break, continue, else, while.....}
+	Terminais: {'{', '}', ';', '.', +, - , *, /, %, ^, &&, ||, (, ), ', "}
+	Regras são descritas por meio de expressões, tais como regex
+	Raiz ou fonte da linguagem é a formação dos conjuntos de elementos
+	
+3. Paradigmas de Programação - Definição dos Paradigmas que são
+utilizados no Formalismo de Linguagens de Programação.
+	- Eu tenho um formalismo a partir da definição da linguagem de
+	programação, que me permite dar reconhecimento aqueles comandos.
+	
+	A) Paradigma de Programação Procedimental
+		- Baseado em estruturas de procedimentos
+		- A sequencia dos procedimentos é ordenada e importante
+		para a transição entre os procedimentos.
+		- PLSQL, Java, Algol, Pascal são exemplos de linguagens que adotam
+		esse paradigma de programação.
+		
+	B) Paradigmas de Programação Orientados a Objetos
+		- Conceito em que as estruturas de programação consistem em 
+		modelos conceitos do mundo real formatados em estruturas de 
+		classes, métodos e atributos.
+		- Implementa técnicas tais como Herança, Sobreescrita, Sobrecarga,
+		Interfaces e etc.
+		- Java, C++, Smaltalk, Ada
+		
+	C) Paradigmas de Programação Lógica
+		- Baseadas em comportamentos a partir de estados booleanos
+		(lôgicas de predicados que retornar verdadeiro ou falso)
+		- Implementando se filtros que aplicam regras de avaliação
+		lôgica. Essas avaliações determinar o atendimento ou não
+		das condições do algoritmo.
+		- Exemplos de linguagens baseadas em tabelas de decisões:
+		Yacc e JavaCC (exemplo Java classloader).
+	
+	D) Paradigmas Funcionais (Tipos estruturais se encaixam também)
+		- São consideras uma das mais comuns, por ser um maneira
+		em que os algoritmos descritos em uma linguagem tem uma 
+		execução linear (da primeira linha até a última).
+		- Baseada no conceito de funções e estruturas, modela em blocos
+		lôgicos de funções as estruturas de programação.
+		- Há divisão explicita de funções.
+		- Conceito de variável global e local
+		- Linguagem C, ADVPL, Delphi, Java Script, PHP e etc....
+	
+	E) Paradigmas de Linguagens Descritivas
+		- Baseado em formas de construção cuja sintaxe é marcada e 
+		atende a uma formato rigido de construção sintaxica.
+		- É considera a que exibe o nível mais alto de proximidade
+		com a linguagem humana. Uma das com o menor número de incidencias
+		de erros (bugs).
+			Exemplo a construção de comandos na linguagem SQL
+
+4. Tipos de Gramáticas:
+	* Regulares - Expressões Regulares para validar a composição de
+	 comandos que atendem a um formato esperado / reconhecido e é válido.
+	 Na análise sintática, por exemplo, valida escrita e a composição.
+	 
+	* Livres de Contexto - São as gramáticas que não possuem um contexto
+	rigido e mutável;
+	
+	* Sensiveis a Contexto - São aquelas que estão ligadas a importações,
+	a dependências que exigem que a linguagem os alcance.
+	
+	* Irrestrita ou Geral - São gramáticas que exibem apenas um elemento
+	dentre vários existem no vocabulario e que não conjugam (não são 
+	adotados em conjuntos para avaliação gramatical);
+
+5. Teoria das Linguagens Formais 
+	A Teoria das Linguagens Formais foi elaborada na década de 50 com o
+	propósito de desenvolver hipóteses pertinentes com as linguagens 
+	naturais. Entretanto, foi verificado que esta teoria era importante
+	para o estudo de linguagens artificiais. 
+	Com o objetivo de prover recursos  para aplicações em análise léxica 
+	e sintática de linguagens de programação.
+
+6. Teoria de Autômatos 
+	A Teoria de Autômatos é o estudo dos dispositivos de computação 
+	abstratos, ou máquinas. Antes de existirem os computadores, na década 
+	de 1930, Alan Turing analisou uma máquina abstrata que tinha todas 
+	as propriedades dos computadores atuais, pelo menos no que se refere 
+	ao quanto eles poderiam calcular. O objetivo era descrever, com 
+	exatidão, o limite entre o que uma máquina de computação pode fazer 
+	e aquilo que ela não podia fazer.
+
+
+7. Análise lêxica, sintatica e semântica
+  A) Análise Lêxica: Etapa na qual, baseado no vocabulário, é feita
+	a validação (reconhecimento) da existência desta palavra na 
+	estrutura de alfabeto.
+	
+	A análise léxica varre caractere por caractere, onde os símbolos
+	especiais (espaço em branco, símbolos de pontuação (;) e nova linha) 
+	são utilizados para estabelecer os limites das palavras. 
+
+	Durante a análise, as palavras ou lexemas são guardados na tabela 
+	de símbolos e classificados de acordo com a linguagem, palavras 
+	reservadas, comandos, variáveis e tipos básicos. 
+
+  B) Análise Sintática: Verificação de como os comandos estão sendo
+    escrito e seu a ordem atendem a regra de gramatica esperada.
+	A sintaxe trata das propriedades livres da linguagem como a 
+	verificação gramatical de programas. 
+	A semântica objetiva dar uma interpretação para a linguagem como 
+	um significado ou valor para um determinado programa. 
+	Consequentemente, a sintaxe basicamente manipula símbolos sem 
+	considerar os seus correspondentes significados.
+	
+  C) Análise Semântica: A conversão dos comandos da linguagens de 
+    programação para a linguagem alvo (compreensivel pela máquia).
+	
+	Enquanto que a sintaxe cuida do modo de como a informação é 
+	transmitida (estrutura) e a semântica zela pelo significado das 
+	palavras, o léxico é responsável por verificar o acervo de palavras 
+	pertencentes a determinada linguagem. 
+	Tendo em vista que toda língua tem como característica básica
+	a mutabilidade, o léxico de um idioma não é finito.
+	Na semântica é definido como a máquina irá realizar a atividade
+	descrita pelo comando que na Lêxica e Sintática foi validada.
+
+8. Árvores para Linguagem
+	- No estudo das Estruturas de Dados prover uma forma de organizar
+	e estruturar a busca dos dados. Conceito de Árvores Binárias.
+	
+	As árvores para as linguagens de programação ordenam as possiveis
+	sequencias válidas para utilização na construção da sintaxe. Por
+	exemplo: na árvore em que iniciamos com o comando if, os galhos 
+	possiveis são o terminador, o comando else ou outro comando if.
+	
+	As árvores de derivação são subconjuntos das árvores, ou segregações
+	que daram origem a uma nova ávore, ou nova estrutura sintaxa/semântica
+	se olharmos pelo lado do formalismo das linguagens de programação.

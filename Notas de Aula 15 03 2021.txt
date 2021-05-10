@@ -1,0 +1,28 @@
+Notas 15.03.2021
+
+- Linguagens Formais e Automâtos é fundamental para a construção
+de linguagens de programação.
+
+- Formalização das Linguagens passa pela construção de três importantes
+fases:
+	- Análise Lêxica
+	- Análise Sintática
+	- Análise Semântica
+
+-Expressões Regulares elas caracterizam-se como validadores
+ou mascaras de validação.
+
+
+	int cliente;  		//Declaração de uma variável
+	cliente = 10;		//Atribuição
+	int cliente(){}		//Declaração de um método
+	cliente();			//Invocar um método
+	
+	int outroValor;
+	void cliente(int valor){
+	
+	}
+	
+	
+	
+	

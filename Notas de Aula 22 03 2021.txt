@@ -1,0 +1,30 @@
+Notas de Aulas 22/03/2021
+
+A definição de uma linguagem (L) está restritamente associada ao
+alfabeto (A). Desse como uma LA é uma parte da totalidade possível
+a partir de um Alfabeto.
+
+O estabelecimento de regras que descrevem como se aplica a avaliação
+gramatical a partir do vocabulo de LA (Linguagem de Programação). Exemplo:
+
+if(valor > 10){
+	printf("Olá o valor é %d\n", valor);
+}
+[i,f][(][A-Za-z][0-9][>,<,<=,>=,==,!=,||,&&,!,|,&,(,)][{,}]
+<optional>[e,l,s,e]
+
+if(<condição>){ TRUE } <optional> else{ FALSE } 0 ou 1x
+
+switch (<condição>) case 1x ou N*x <optional) default 1x
+
+
+Listagem de Comandos (Vocabulos da Linguagem)
+{main, if, else, for, while, do, continue, break, printf,...}
+
+a,b 4
+aa, ab, bb, ba
+aaa, aba, abb, bbb, baa, bab
+aaaa, abaa, abba, abbb, bbbb, baaa, bbaa, bbba, abab, baba....
+
+Regra um número que somente divisivel por 1 e por ele mesmo
+1, 2, 3, 11, 13, 17, 19, 23, 29, 31, 37, 41, 1003, ...

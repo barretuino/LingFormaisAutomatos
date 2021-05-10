@@ -1,0 +1,41 @@
+Notas de Aula 12/04/2021
+
+Expressões Regulares (Regex)
+1) Validação de Regras
+	- Comum com formatações, tais CPF, CNPJ, Datas....
+	A idéia é de uma máscara de entrada na qual os valores são validados, impedindo que valores cujo formato seja inválido não possam ser processados.
+
+2) Construção de Expressões (prática)
+	Análise sintática eu passo a criar expressões que são capazes de 
+	validar expressões. Comandos que atendem a especificação de validar se um conjunto de parâmetros e válido na execução do comando.
+
+3) Formalismo em Linguagens de Programação
+	Análisador Sintático
+	
+	if(<condição>){
+		//TRUE
+	}else{
+		//FALSE
+	}
+	
+	double soma(){} //Declarando uma função
+	double soma; //Declarando uma variável
+	soma = 10; //Atribuindo um valor a variável
+	double valor = soma(); //Atribuindo o retorno da função da variável
+	double soma[] = {5, 10, 15}; //Declarando um variável do tipo vetor
+	if(valor != soma)
+
+	Heurística: técnica empregada na organização e na localização das estruturas, nas quais iremos empregar a Expressão Regular.
+	
+	DD/MM/AAAA
+	Forma Simplista para uma máscara de data
+	[[0-1]&[1-9]]|[10-31]/[[0-1]&[1-9]]|[10-12]/[[0-9][0-9][0-9][0-9]]
+	01/10/1982
+
+
+	
+	
+	
+	
+	
+	

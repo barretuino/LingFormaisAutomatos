@@ -1,0 +1,30 @@
+Notas de Aula 10/05/2021
+
+Link de Leitura Pós Aula:
+
+https://www.researchgate.net/profile/Claudia-Zapata-5/publication/275032442_Construccion_de_un_Compilador_de_Asertos_de_Programacion_Metodica_Utilizando_El_Metodo_De_Automatas_Adaptativos/links/552fd54f0cf20ea0a06ecdda/Construccion-de-un-Compilador-de-Asertos-de-Programacion-Metodica-Utilizando-El-Metodo-De-Automatas-Adaptativos.pdf#page=30
+
+- Estruturas de Pilhas são a base para Automatos com pilhas. A estrutura de busca remete a listas em que o último elemento inserido, ou seja o final da sintaxe, é o início da nossa avaliação.
+
+   Exemplo bbaa, o final que o elemento 'a' será o topo da nossa pilha:
+   
+	a --> aa --> baa --> bbaa --> expressão válida.
+	
+	else --> if --> if else --> expressão válida
+	
+	2 + 2 x 2
+	
+	4 + 4 x 4
+	
+	4
+	x
+	4
+	+
+	4 = 20
+	
+	4
+	+
+	4
+	x
+	4 = 32
+	

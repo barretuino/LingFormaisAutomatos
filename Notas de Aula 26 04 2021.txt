@@ -1,0 +1,24 @@
+Notas de Aula 26/04/2021
+
+AFND – Autômato Finito Não Determinístico
+
+- Processos de Análise Lêxica, Sintática e Semântica
+
+- Estruturas que estão por trás da construção da linguagem (as árvores que formam a linguagem)
+
+for(int i=0; i<n; i++){
+	//tarefa
+}
+
+forEach(Produto p : produtos){
+	p.getCodigo;
+}
+
+produtos.stream().forEach(p -> p.getCodigo());
+
+- Uma lista ligada é uma estrutura (descrita normalmente em uma matriz) em que os elementos apontam um para o outro. Exemplo:
+
+    S-> A1 -> A2 -> A3 -> [A4, A5] -> A4 -> [A6, A7], A5 -> [A8, A9]...
+	
+	S -> A (if)
+	S -> A -> B (else)

@@ -1,0 +1,58 @@
+Notas de Aula 03 05 2021
+
+- Estruturas de Árvores elas proporcionam um arranjo que facilita a estrutura de localização e de composição dos comandos.
+
+	- A recursão ela é oportunamente mais rápida graças a estrutura das árvores.
+	
+	2 + 2 * 2 = 4 * 2 = 8
+	2 + 2 * 2 = 2 + 4 = 6
+	
+	- Se nós temos a necessidade de definir uma precedência quanto a uma operação, ou a um arranjo de operações, precisamos determinar se a nossa árvore será um árvore cuja estrutura é profundidade a direita ou a esquerda.
+	
+	54 - 14 * 2 - 1 = 40 * 2 - 1 = 80 - 1 = 79
+	54 - 14 * 2 - 1 = 54 - 14 * 1 = 54 - 14 = 40
+	54 - (14 * (2 - 1)) = 54 - 14 = 40
+	54 - (14 * 2) - 1 = 54 - 28 - 1 = 26 - 1 = 25
+	
+	
+	if(condicao > 10){
+		if(condicaoSec < 5){
+			
+		}
+	}
+	
+	try{
+	
+	}catch(Exception e){
+	}catch(IOException e){
+	}catch(SQLException e){
+	}
+	.........
+	finally{
+	}
+	
+	if(valor > 10){
+		somaValor(valor);
+		recebeNovoValor(valor);
+	}
+	
+	delete from clientes c; where c.dataCadastro >= sysdate-10;
+	
+	- Qual é o problema da ambiguidade? 
+	Do ponto de vista da análise sintaxica, nenhum. Para Semântica podemos ter uma expressão que não condiz com o resultado esperado para a operação.
+	
+	
+	select * from clientes c
+	where c.id > 10 and c.dataCadastro <= sysdate-2 
+		  or c.telefone like '019%';
+		  
+	id		dataCadastro	telefone
+	14		01/04/2021		019 34621026	true
+	15		01/04/2021		011 99948562	true
+	
+	- Remoção da ambiguidade passa por definir priorizações, tais como, de que maneira (induz) a árvore deve ser montada. Voltando para o caso da soma de a e multiplicação veja:
+	
+	   a = 2;
+	   a + a * a = 8
+	   (a + a) * a = 8
+	   a + (a * a) = 6
